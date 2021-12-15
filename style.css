@@ -19,37 +19,39 @@ body{
 }
 
 .container{
-    height: 327px;
+    height: 427px;
   
 }
 
 .row{
     height: 100%;
 }
+
+.ms_container-photos{
+    height: 100%;
+    
+}
+
 .ms_itemsContainer{
     height: 100%;
 }
 
-.ms_container-photos{
+.ms_mainPhoto,
+.ms_mainPhoto img{
     height: 100%;
+    width: 100%;
 }
 
 .ms_mainPhoto img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
     position: relative;
 }
 
-
 .ms_textContainer{
     position: absolute;
-    right:421px;
-    bottom:46px;
-    width: 400px;
-
-    
-    
+    right:400px;
+    bottom:0px;
+    width: 600px; 
+    padding-bottom: 100px;   
 }
 
 .ms_sidePhotos{
@@ -82,8 +84,6 @@ padding:3px 6px;
 
 
 
-
-
 .ms_sidePhotos .ms_imgContainer{
     height: calc( 100% / 5 );
     width: 100%;
@@ -107,11 +107,23 @@ padding:3px 6px;
     left: 0;
  
 }
+
+.ms_cover .border{
+    background-color: none;
+    border: 3px solid white;
+}
+
 .ms_imgContainer .ms_remove{
     display: none;
 }
 
-.item.active{
+#item-0 ,#item-1, #item-2, #item-3, #item-4, #item-5 {
+    display: none;
+    height: 427px;
+    overflow: hidden;
+}
+
+#item-0, #item-1.active, #item-2.active, #item-3.active, #item-4.active, #item-5.active{
     display: block;
 }
 
@@ -123,6 +135,20 @@ padding:3px 6px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#title{
+    display: none;
+    height: 427px;
+    overflow: hidden;
+
+}
+
+#text{
+    display: none;
+    height: 327px;
+    overflow: hidden;
+
 }
 
 

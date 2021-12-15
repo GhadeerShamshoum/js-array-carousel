@@ -24,7 +24,8 @@ const text = [
 ];
 
 let itemsContent = '';
-let elementActive = 0;
+let elementActive = 1;
+
 
 for(let i=0; i<items.length; i++){
     itemsContent += `
@@ -32,9 +33,10 @@ for(let i=0; i<items.length; i++){
           <img src="${items[i]}">
       </div>
       <div class="ms_textContainer align-self-end m-5 text-end">
-          <h1 class="title text-white d-flex justify-content-end me-3">${title[i]}</h1>
-          <p class="text text-white d-flex justify-conet> ${text[i]}</p>
+          <h1 class="title text-white d-flex justify-content-end me-3 id="title-${i}">${title[i]}</h1>
+          <p class="text text-white d-flex justify-conetid="text-${i}> ${text[i]}</p>
       </div>`;
+    
 
 }
 
@@ -53,7 +55,10 @@ prev.addEventListener('click', function(){
         itemActive.classList.remove('active');
         itemActive= document.getElementById('item-'+elementActive);
         itemActive.classList.add('active');
+    
     }
+
+    
    
 });
 next.addEventListener('click', function(){
