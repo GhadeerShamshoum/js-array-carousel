@@ -34,6 +34,7 @@ body{
 
 .ms_itemsContainer{
     height: 100%;
+    position: relative;
 }
 
 .ms_mainPhoto,
@@ -42,16 +43,14 @@ body{
     width: 100%;
 }
 
-.ms_mainPhoto img{
-    position: relative;
-}
 
-.ms_textContainer{
+
+.text{
     position: absolute;
-    right:400px;
-    bottom:0px;
+    right:14px;
+    bottom:-176px;
     width: 600px; 
-    padding-bottom: 100px;   
+    height: 325px;   
 }
 
 .ms_sidePhotos{
@@ -117,13 +116,13 @@ padding:3px 6px;
     display: none;
 }
 
-#item-0 ,#item-1, #item-2, #item-3, #item-4, #item-5 {
+.item {
     display: none;
     height: 427px;
     overflow: hidden;
 }
 
-#item-0, #item-1.active, #item-2.active, #item-3.active, #item-4.active, #item-5.active{
+.item.active{
     display: block;
 }
 
