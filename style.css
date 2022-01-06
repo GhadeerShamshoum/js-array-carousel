@@ -86,7 +86,7 @@ padding:3px 6px;
 .ms_sidePhotos .ms_imgContainer{
     height: calc( 100% / 5 );
     width: 100%;
-    background-color:  rgba(128, 128, 128, 0.514);
+    background-color: rgb(0, 0, 0);
     position: relative;
     
 }
@@ -95,26 +95,18 @@ padding:3px 6px;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0.5;
 }
 
-.ms_imgContainer .ms_cover{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(20 20 20 / 51%);
-    position: absolute;
-    top:0;
-    left: 0;
- 
-}
 
-.ms_cover .border{
-    background-color: none;
+
+.sidePoto.opacity{
+    opacity: 1 ; 
     border: 3px solid white;
 }
 
-.ms_imgContainer .ms_remove{
-    display: none;
-}
+
+
 
 .item {
     display: none;
@@ -126,30 +118,9 @@ padding:3px 6px;
     display: block;
 }
 
-.hidden{
-    display: none;
-}
 
 .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-#title{
-    display: none;
-    height: 427px;
-    overflow: hidden;
-
-}
-
-#text{
-    display: none;
-    height: 327px;
-    overflow: hidden;
-
-}
-
-
-
-
